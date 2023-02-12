@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craig's List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container bg-darker">
+        <div id="intro" class="content">
+            <h1>Hi, I'm Craig and this is my list</h1>
+            <p>I'm moving away at the beginning of April. I don't know where my next home will be, and I don't know the next time I'll be in California.</p>
+            <p>So this is sort of an <i><b>Everything Must Go</b></i> situation.</p>
+            <p>This should be pretty straightforward. Enter your name—and contact info if I don't already have it—check off all the items you're interested in, and hit the "Submit" button at the bottom of the page.</p>
+            <p>I'm not a big fan of "first come first serve," so I'll probably give this a couple weeks. If multiple people want the same item, I'll pick a random winner. (Though friends will get priority. Sorry strangers!)</p>
+            <p>Keep in mind, I'm still living here till early April. I'll need most of my furniture till then. (I'll update this page with an exact date of departure when I have it.)</p>
+        </div>
+    </div>
+    <div class="container bg-lighter">
+        <div id="contact" class="content">
+            <input type="text" placeholder="Name" id="input-name">
+            <input type="text" placeholder="Contact info" id="input-contact">
+        </div>
+    </div>
+    <div id="tables" class="container bg-lighter">
+        <table id="furniture-table">
+            <thead>
+                <tr>
+                    <th colspan="4">Furniture</th>
+                </tr>
+            </thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Item</th>
+                <th scope="col">Dims</th>
+                <th scope="col">Notes</th>
+            </tr>
+            <tr>
+                <td class="checkbox"><input type="checkbox" id=""></td>
+                <td>name</td>
+                <td>dims</td>
+                <td>notes</td>
+            </tr>
+        </table>
+        <table id="games-table">
+            <thead>
+                <tr>
+                    <th colspan="3">Games</th>
+                </tr>
+            </thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Item</th>
+                <th scope="col">Notes</th>
+            </tr>
+            <tr>
+                <td class="checkbox"><input type="checkbox" id=""></td>
+                <td>name</td>
+                <td>notes</td>
+            </tr>
+        </table>
+        <table id="electronics-table">
+            <thead>
+                <tr>
+                    <th colspan="3">Electronics</th>
+                </tr>
+            </thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Item</th>
+                <th scope="col">Notes</th>
+            </tr>
+            <tr>
+                <td class="checkbox"><input type="checkbox" id=""></td>
+                <td>name</td>
+                <td>notes</td>
+            </tr>
+        </table>
+        <table id="other-table">
+            <thead>
+                <tr>
+                    <th colspan="3">Other</th>
+                </tr>
+            </thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Item</th>
+                <th scope="col">Notes</th>
+            </tr>
+            <tr>
+                <td class="checkbox"><input type="checkbox" id=""></td>
+                <td>name</td>
+                <td>notes</td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer" class="container bg-darker">
+        <button id="submit-button">SUBMIT</button>
+    </div>
+
+
+</body>
+</html>
