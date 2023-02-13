@@ -68,11 +68,6 @@ input {
     padding: 0.4rem;
 }
 
-table {
-    width: var(--body-width);
-    border: 0.2rem solid var(--stroke);
-}
-
 th {
     color: var(--header-color);
 }
@@ -85,7 +80,6 @@ th {
 
 .content {
     padding: 0 2rem;
-    outline: 0.2rem solid white;
 }
 
 /* for mobile */
@@ -122,9 +116,19 @@ input#input-name {
 div#tables {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    padding-bottom: 12rem; /* (footer padding * 2) + button height + a bit extra */
+    padding-bottom: 8rem; /* (footer padding * 2) + button height + a bit extra */
+}
+
+table {
+    /* i think this width is messing up mobile */
+    /*width: var(--body-width);*/
+    margin-bottom: 3rem;
+}
+
+h2.table-header {
+    font-size: 2rem;
+    color: var(--header-color);
+    align-self: flex-start;
 }
 
 /*
@@ -133,12 +137,6 @@ table > * > *,
 table > * > * > * {
     outline: 1px white solid;
 } */
-
-[colspan] {
-    font-size: 2rem;
-    text-align: left;
-    color: var(--header-color)
-}
 
 th {
     font-size: 1.6rem;
