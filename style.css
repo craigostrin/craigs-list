@@ -112,7 +112,8 @@ table > * > * > * {
 
 th {
     padding: 10px;
-    color: var(--graf-color)
+    color: var(--graf-color);
+    text-align: left;
 }
 
 td {
@@ -125,6 +126,7 @@ td.checkbox {
     padding-left: 0px;
     text-align: center;
     height: 40px;
+    width: 30px;
 }
 
 
@@ -152,5 +154,6 @@ td.checkbox {
 }
 
 #submit-button:active {
-    box-shadow: black 20px;
+    box-shadow: 0 0 10px var(--ternary);
+    
 }
