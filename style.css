@@ -89,7 +89,7 @@ th {
 }
 
 /* for mobile */
-@media (max-width: 70rem) {
+@media (max-width: 50rem) {
     h1 {
         color: red;
     }
