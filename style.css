@@ -45,8 +45,17 @@ p {
     padding: 6px 0;
 }
 
+a, a:visited {
+    font-weight: bold;
+    text-decoration: none;
+}
+
 a {
-    
+    color: var(--highlight);
+}
+
+a:visited {
+    color: var(--ternary);
 }
 
 input {
