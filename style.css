@@ -1,8 +1,8 @@
 :root {
     /* colors from happyhues.co! */
     /* specifically https://www.happyhues.co/palettes/4 */
-    --body-width: 680px;
-    --footer-width: 640px;
+    --body-width: 68rem;
+    --footer-width: 64rem;
     --button-bg: #7f5af0;
     --button-bg-hover: #5F44B3;
     --footer-bg: #FF5EFF;
@@ -26,6 +26,10 @@
     padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: sans-serif;
     width: 100%;
@@ -36,13 +40,15 @@ body {
 }
 
 h1 {
+    font-size: 3.2rem;
     color: var(--header-color);
-    padding: 20px 0 20px 40px;
+    padding: 2rem 0 2rem 4rem;
 }
 
 p {
+    font-size: 1.6rem;
     color: var(--graf-color);
-    padding: 6px 0;
+    padding: 0.6rem 0;
 }
 
 a, a:visited {
@@ -59,18 +65,17 @@ a:visited {
 }
 
 input {
-    padding: 4px;
+    padding: 0.4rem;
 }
 
 table {
     width: var(--body-width);
-    border: 2px solid var(--stroke);
+    border: 0.2rem solid var(--stroke);
 }
 
 th {
     color: var(--header-color);
 }
-
 
 .container {
     width: 100%;
@@ -79,12 +84,12 @@ th {
 }
 
 .content {
-    padding: 0 20px;
-    outline: 2px solid white;
+    padding: 0 2rem;
+    outline: 0.2rem solid white;
 }
 
 /* for mobile */
-@media (max-width: 700px) {
+@media (max-width: 70rem) {
     h1 {
         color: red;
     }
@@ -103,23 +108,23 @@ div.content {
 }   
 
 div#intro {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 div#contact {
-    margin: 40px 0 30px 0;
+    margin: 4rem 0 3rem 0;
 }
 
 input#input-name {
-    margin-right: 16px;
+    margin-right: 1.6rem;
 }
 
 div#tables {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    padding-bottom: 120px; /* (footer padding * 2) + button height + a bit extra */
+    gap: 3rem;
+    padding-bottom: 12rem; /* (footer padding * 2) + button height + a bit extra */
 }
 
 /*
@@ -130,28 +135,30 @@ table > * > * > * {
 } */
 
 [colspan] {
+    font-size: 2rem;
     text-align: left;
-    font-size: 20px;
     color: var(--header-color)
 }
 
 th {
-    padding: 10px;
+    font-size: 1.6rem;
+    padding: 1rem;
     color: var(--graf-color);
     text-align: left;
 }
 
 td {
+    font-size: 1.6rem;
     vertical-align: center;
-    padding-left: 10px;
+    padding-left: 1rem;
     color: var(--graf-color)
 }
 
 td.checkbox {
-    padding-left: 0px;
+    padding-left: 0;
     text-align: center;
-    height: 40px;
-    width: 30px;
+    height: 4rem;
+    width: 3rem;
 }
 
 
@@ -159,19 +166,19 @@ td.checkbox {
     position: fixed;
     /* width: var(--footer-width); */
     bottom: 0; /* stick to bottom */
-    padding: 20px;
+    padding: 2rem;
     text-align: center;
 }
 
 #submit-button {
-    width: 106px;
-    height: 36px;
-    border-radius: 16px;
+    width: 10.6rem;
+    height: 3.6rem;
+    border-radius: 1.6rem;
     background-color: var(--button-bg);
     color: var(--button-color);
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
-    border: 2px var(--submit-bg) solid;
+    border: 0.2rem var(--submit-bg) solid;
 }
 
 #submit-button:hover {
@@ -179,6 +186,6 @@ td.checkbox {
 }
 
 #submit-button:active {
-    box-shadow: 0 0 10px var(--ternary);
+    box-shadow: 0 0 1rem var(--ternary);
     
 }
