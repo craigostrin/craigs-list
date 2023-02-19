@@ -51,8 +51,7 @@ p {
     padding: 0.6rem 0;
 }
 
-p.highlight,
-span.highlight {
+.highlight {
     color: var(--highlight);
 }
 
