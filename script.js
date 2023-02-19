@@ -7,16 +7,17 @@ submitButton.addEventListener('click', () => {
     let from    = inputName.value;
     let contact = inputContact.value;
     let items   = getInterestedItemsAsString();
-    console.log(from + " is interested in " + items + ", contact info: " + contact);
+    if(!from){
+        alert("Please enter a name. Otherwise I have no idea who wants what.");
+        return;
+    }
     sendEmail(from, contact, items);
 });
 
 
 function getInterestedItemsAsString(){
     const checkboxes = Array.from(document.querySelectorAll('input[type="checkbox"]'));
-    console.log(checkboxes);
     const interestedChecked = checkboxes.filter( checkbox => checkbox.checked );
-    console.log(interestedChecked);
     let interestedItems = interestedChecked.map( checkbox => {
         return checkbox.parentNode.nextSibling.nextSibling.textContent;
     });
