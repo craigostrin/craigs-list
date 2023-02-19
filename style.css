@@ -51,6 +51,10 @@ p {
     padding: 0.6rem 0;
 }
 
+.highlight {
+    color: var(--highlight);
+}
+
 a, a:visited {
     font-weight: bold;
     text-decoration: none;
