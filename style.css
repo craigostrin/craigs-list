@@ -152,6 +152,7 @@ th {
 td {
     font-size: 1.6rem;
     vertical-align: center;
+    height: 4rem;
     padding-left: 1rem;
     color: var(--graf-color)
 }
@@ -159,7 +160,6 @@ td {
 td.checkbox {
     padding-left: 0;
     text-align: center;
-    height: 4rem;
     width: 3rem;
 }
 

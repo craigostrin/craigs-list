@@ -34,7 +34,7 @@ function sendEmail(from, contact, items){
     }).then(
       message => {
         if (message === "OK") {
-            alert("Submitted. Thanks for your interested! I'll be in touch. :)")
+            alert("Submitted. Thanks for your interest! I'll be in touch. :)")
         } else {
             alert(message);
         }
