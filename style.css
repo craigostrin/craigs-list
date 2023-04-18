@@ -55,6 +55,10 @@ p {
     color: var(--highlight);
 }
 
+.claimed {
+    display: none
+}
+
 a, a:visited {
     font-weight: bold;
     text-decoration: none;
